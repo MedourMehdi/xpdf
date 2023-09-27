@@ -6,16 +6,16 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <math.h>
-#include "gtypes.h"
-#include "GString.h"
-#include "GList.h"
+#include "../goo/gtypes.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
 #include "Error.h"
 #include "PDF417Barcode.h"
 

@@ -6,17 +6,17 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
-#include "gmem.h"
-#include "gmempp.h"
-#include "GHash.h"
-#include "FoFiTrueType.h"
-#include "FoFiType1C.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GHash.h"
+#include "../fofi/FoFiTrueType.h"
+#include "../fofi/FoFiType1C.h"
 #include "CharCodeToUnicode.h"
 #include "WebFont.h"
 

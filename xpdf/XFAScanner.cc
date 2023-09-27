@@ -6,14 +6,14 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
-#include "GString.h"
-#include "GHash.h"
+#include "../goo/GString.h"
+#include "../goo/GHash.h"
 #include "Object.h"
 #include "Error.h"
 #include "Zoox.h"

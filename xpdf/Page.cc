@@ -6,15 +6,15 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <stddef.h>
-#include "gmempp.h"
-#include "Trace.h"
+#include "../goo/gmempp.h"
+#include "../goo/Trace.h"
 #include "GlobalParams.h"
 #include "Object.h"
 #include "Array.h"

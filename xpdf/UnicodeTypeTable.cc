@@ -6,9 +6,9 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 #include <stdlib.h>
-#include "gmempp.h"
+#include "../goo/gmempp.h"
 #include "CharTypes.h"
 #include "UnicodeTypeTable.h"
 

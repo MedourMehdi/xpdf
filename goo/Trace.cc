@@ -8,7 +8,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+ #include "../aconf.h"
 
 #if ENABLE_TRACING
 
@@ -17,8 +17,8 @@
 #include <sys/types.h>
 #include <sys/time.h>
 #include <unistd.h>
-#include "GString.h"
-#include "Trace.h"
+#include "../goo/GString.h"
+#include "../goo/Trace.h"
 
 // NB: This module is NOT thread-safe.
 

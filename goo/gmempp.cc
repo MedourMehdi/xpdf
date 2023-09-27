@@ -8,8 +8,8 @@
 //
 //========================================================================
 
-#include <aconf.h>
-#include "gmem.h"
+ #include "../aconf.h"
+#include "../goo/gmem.h"
 // NB: do not include gmempp.h here.
 
 #ifdef DEBUG_MEM

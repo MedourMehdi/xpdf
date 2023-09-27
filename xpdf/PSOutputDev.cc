@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -17,10 +17,10 @@
 #include <stdarg.h>
 #include <signal.h>
 #include <math.h>
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
-#include "GHash.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
+#include "../goo/GHash.h"
 #include "config.h"
 #include "GlobalParams.h"
 #include "Object.h"
@@ -30,8 +30,8 @@
 #include "GfxState.h"
 #include "GfxFont.h"
 #include "UnicodeMap.h"
-#include "FoFiType1C.h"
-#include "FoFiTrueType.h"
+#include "../fofi/FoFiType1C.h"
+#include "../fofi/FoFiTrueType.h"
 #include "Catalog.h"
 #include "Page.h"
 #include "Stream.h"
@@ -43,9 +43,9 @@
 #include "AcroForm.h"
 #include "TextString.h"
 #if HAVE_SPLASH
-#  include "Splash.h"
-#  include "SplashBitmap.h"
-#  include "SplashOutputDev.h"
+#include "../splash/Splash.h"
+#include "../splash/SplashBitmap.h"
+#include "SplashOutputDev.h"
 #endif
 #include "PSOutputDev.h"
 

@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -17,11 +17,11 @@
 #if HAVE_STD_SORT
 #include <algorithm>
 #endif
-#include "gmem.h"
-#include "gmempp.h"
-#include "SplashMath.h"
-#include "SplashPath.h"
-#include "SplashXPath.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../splash/SplashMath.h"
+#include "../splash/SplashPath.h"
+#include "../splash/SplashXPath.h"
 
 //------------------------------------------------------------------------
 

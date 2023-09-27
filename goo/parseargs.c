@@ -11,7 +11,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "parseargs.h"
+#include "../goo/parseargs.h"
 
 static ArgDesc *findArg(ArgDesc *args, char *arg);
 static GBool grabArg(ArgDesc *arg, int i, int *argc, char *argv[]);
@@ -66,20 +66,20 @@ void printUsage(const char *program, const char *otherArgs, ArgDesc *args) {
     switch (arg->kind) {
     case argInt:
     case argIntDummy:
-      typ = " <int>";
+      typ = (char*)" <int>";
       break;
     case argFP:
     case argFPDummy:
-      typ = " <number>";
+      typ = (char*)" <number>";
       break;
     case argString:
     case argStringDummy:
-      typ = " <string>";
+      typ = (char*)" <string>";
       break;
     case argFlag:
     case argFlagDummy:
     default:
-      typ = "";
+      typ = (char*)"";
       break;
     }
     fprintf(stderr, "%-*s", w1, typ);

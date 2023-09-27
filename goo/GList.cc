@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+ #include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -14,9 +14,9 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "GList.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GList.h"
 
 //------------------------------------------------------------------------
 // GList

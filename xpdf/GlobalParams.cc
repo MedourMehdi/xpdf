@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -26,13 +26,13 @@
 #if HAVE_FONTCONFIG
 #  include <fontconfig/fontconfig.h>
 #endif
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
-#include "GHash.h"
-#include "gfile.h"
-#include "FoFiIdentifier.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
+#include "../goo/GHash.h"
+#include "../goo/gfile.h"
+#include "../fofi/FoFiIdentifier.h"
 #include "Error.h"
 #include "NameToCharCode.h"
 #include "CharCodeToUnicode.h"

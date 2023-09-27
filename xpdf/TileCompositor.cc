@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -14,10 +14,10 @@
 
 #include <string.h>
 #include <math.h>
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
-#include "SplashBitmap.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
+#include "../splash/SplashBitmap.h"
 #include "GlobalParams.h"
 #include "DisplayState.h"
 #include "TileMap.h"

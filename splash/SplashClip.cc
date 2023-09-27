@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -14,13 +14,13 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "SplashErrorCodes.h"
-#include "SplashPath.h"
-#include "SplashXPath.h"
-#include "SplashXPathScanner.h"
-#include "SplashClip.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../splash/SplashErrorCodes.h"
+#include "../splash/SplashPath.h"
+#include "../splash/SplashXPath.h"
+#include "../splash/SplashXPathScanner.h"
+#include "../splash/SplashClip.h"
 
 //------------------------------------------------------------------------
 

@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -17,16 +17,16 @@
 #ifndef _WIN32
 #  include <unistd.h>
 #endif
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
-#include "SplashMath.h"
-#include "SplashFTFontEngine.h"
-#include "SplashFontFile.h"
-#include "SplashFontFileID.h"
-#include "SplashFont.h"
-#include "SplashFontEngine.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
+#include "../splash/SplashMath.h"
+#include "../splash/SplashFTFontEngine.h"
+#include "../splash/SplashFontFile.h"
+#include "../splash/SplashFontFileID.h"
+#include "../splash/SplashFont.h"
+#include "../splash/SplashFontEngine.h"
 
 #ifdef VMS
 #if (__VMS_VER < 70000000)

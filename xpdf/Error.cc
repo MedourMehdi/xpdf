@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -15,8 +15,8 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <stdarg.h>
-#include "gmempp.h"
-#include "GString.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
 #include "GlobalParams.h"
 #include "Error.h"
 

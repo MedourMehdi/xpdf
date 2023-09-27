@@ -6,7 +6,7 @@
  * Copyright 1996-2003 Glyph & Cog, LLC
  */
 
-#include <aconf.h>
+ #include "../aconf.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
@@ -20,7 +20,7 @@
 #if MULTITHREADED && defined(_WIN32)
 #  include <windows.h>
 #endif
-#include "gmem.h"
+#include "../goo/gmem.h"
 
 #ifdef DEBUG_MEM
 

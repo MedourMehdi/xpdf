@@ -8,7 +8,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+ #include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -20,9 +20,9 @@
 #include <ctype.h>
 #include <math.h>
 #include <limits.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
 
 //------------------------------------------------------------------------
 
@@ -109,7 +109,7 @@ static inline int size(int len) {
   return (len + delta) & ~(delta - 1);
 }
 
-inline void GString::resize(int length1) {
+inline void GString::resize(Gulong length1) {
   char *s1;
 
   if (length1 < 0) {

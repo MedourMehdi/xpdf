@@ -6,16 +6,16 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
-#include "gmem.h"
-#include "gmempp.h"
-#include "GList.h"
-#include "GMutex.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GList.h"
+#include "../goo/GMutex.h"
 #ifdef _WIN32
 #  include <windows.h>
 #else
@@ -24,7 +24,7 @@
 #endif
 #include "Object.h"
 #include "PDFDoc.h"
-#include "SplashBitmap.h"
+#include "../splash/SplashBitmap.h"
 #include "SplashOutputDev.h"
 #include "DisplayState.h"
 #include "GfxState.h"

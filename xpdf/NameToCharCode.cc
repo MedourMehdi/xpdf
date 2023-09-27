@@ -6,15 +6,15 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <string.h>
-#include "gmem.h"
-#include "gmempp.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
 #include "NameToCharCode.h"
 
 //------------------------------------------------------------------------

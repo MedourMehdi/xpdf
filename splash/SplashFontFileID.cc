@@ -6,14 +6,14 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
-#include "gmempp.h"
-#include "SplashFontFileID.h"
+#include "../goo/gmempp.h"
+#include "../splash/SplashFontFileID.h"
 
 //------------------------------------------------------------------------
 // SplashFontFileID

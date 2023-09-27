@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -15,12 +15,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <limits.h>
-#include "gtypes.h"
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
-#include "FoFiIdentifier.h"
+#include "../goo/gtypes.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
+#include "../fofi/FoFiIdentifier.h"
 
 //------------------------------------------------------------------------
 

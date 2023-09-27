@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #if HAVE_FREETYPE_H
 
@@ -18,14 +18,14 @@
 #ifndef _WIN32
 #  include <unistd.h>
 #endif
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
-#include "gfile.h"
-#include "FoFiTrueType.h"
-#include "FoFiType1C.h"
-#include "SplashFTFontFile.h"
-#include "SplashFTFontEngine.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/gfile.h"
+#include "../fofi/FoFiTrueType.h"
+#include "../fofi/FoFiType1C.h"
+#include "../splash/SplashFTFontFile.h"
+#include "../splash/SplashFTFontEngine.h"
 #include FT_MODULE_H
 #ifdef FT_CFF_DRIVER_H
 #  include FT_CFF_DRIVER_H

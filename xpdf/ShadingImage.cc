@@ -6,19 +6,19 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <math.h>
-#include "Trace.h"
+#include "../goo/Trace.h"
 #include "GfxState.h"
-#include "SplashBitmap.h"
-#include "SplashPattern.h"
-#include "SplashPath.h"
-#include "Splash.h"
+#include "../splash/SplashBitmap.h"
+#include "../splash/SplashPattern.h"
+#include "../splash/SplashPath.h"
+#include "../splash/Splash.h"
 #include "ShadingImage.h"
 
 // Max recursive depth for a patch mesh shading fill.

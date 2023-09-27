@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -14,8 +14,8 @@
 
 #include <stdlib.h>
 #include <limits.h>
-#include "gmempp.h"
-#include "GList.h"
+#include "../goo/gmempp.h"
+#include "../goo/GList.h"
 #include "Error.h"
 #include "JArithmeticDecoder.h"
 #include "JBIG2Stream.h"

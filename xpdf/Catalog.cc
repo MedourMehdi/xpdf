@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -15,10 +15,10 @@
 #include <string.h>
 #include <stddef.h>
 #include <limits.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "gfile.h"
-#include "GList.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/gfile.h"
+#include "../goo/GList.h"
 #include "Object.h"
 #include "CharTypes.h"
 #include "PDFDoc.h"

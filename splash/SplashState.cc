@@ -6,20 +6,20 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <string.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "SplashPattern.h"
-#include "SplashScreen.h"
-#include "SplashClip.h"
-#include "SplashBitmap.h"
-#include "SplashState.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../splash/SplashPattern.h"
+#include "../splash/SplashScreen.h"
+#include "../splash/SplashClip.h"
+#include "../splash/SplashBitmap.h"
+#include "../splash/SplashState.h"
 
 //------------------------------------------------------------------------
 // SplashState

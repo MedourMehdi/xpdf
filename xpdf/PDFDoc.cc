@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -19,9 +19,9 @@
 #ifdef _WIN32
 #  include <windows.h>
 #endif
-#include "gmempp.h"
-#include "GString.h"
-#include "gfile.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/gfile.h"
 #include "config.h"
 #include "GlobalParams.h"
 #include "Page.h"

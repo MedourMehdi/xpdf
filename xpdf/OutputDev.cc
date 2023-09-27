@@ -6,14 +6,14 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <stddef.h>
-#include "gmempp.h"
+#include "../goo/gmempp.h"
 #include "Object.h"
 #include "Stream.h"
 #include "GfxState.h"

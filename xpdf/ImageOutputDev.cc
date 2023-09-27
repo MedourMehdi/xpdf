@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -17,8 +17,8 @@
 #include <stddef.h>
 #include <ctype.h>
 #include <math.h>
-#include "gmem.h"
-#include "gmempp.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
 #include "config.h"
 #include "Error.h"
 #include "GfxState.h"

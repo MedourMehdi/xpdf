@@ -6,21 +6,21 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <math.h>
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
 #include "GlobalParams.h"
-#include "Splash.h"
-#include "SplashBitmap.h"
-#include "SplashPattern.h"
-#include "SplashPath.h"
+#include "../splash/Splash.h"
+#include "../splash/SplashBitmap.h"
+#include "../splash/SplashPattern.h"
+#include "../splash/SplashPath.h"
 #include "Error.h"
 #include "ErrorCodes.h"
 #include "PDFDoc.h"

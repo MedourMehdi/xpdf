@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -23,11 +23,11 @@
 #endif
 #include <string.h>
 #include <ctype.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "gfile.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/gfile.h"
 #if MULTITHREADED
-#include "GMutex.h"
+#include "../goo/GMutex.h"
 #endif
 #include "config.h"
 #include "Error.h"

@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #if HAVE_FREETYPE_H
 
@@ -14,12 +14,12 @@
 #pragma implementation
 #endif
 
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
-#include "SplashFTFontEngine.h"
-#include "SplashFTFont.h"
-#include "SplashFTFontFile.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../splash/SplashFTFontEngine.h"
+#include "../splash/SplashFTFont.h"
+#include "../splash/SplashFTFontFile.h"
 
 //------------------------------------------------------------------------
 // SplashFTFontFile

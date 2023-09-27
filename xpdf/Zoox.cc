@@ -4,7 +4,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -13,11 +13,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
-#include "GHash.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
+#include "../goo/GHash.h"
 #include "Zoox.h"
 
 //~ all of this code assumes the encoding is UTF-8 or ASCII or something

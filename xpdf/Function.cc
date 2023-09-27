@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -16,9 +16,9 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "GList.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GList.h"
 #include "Object.h"
 #include "Dict.h"
 #include "Stream.h"

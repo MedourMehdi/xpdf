@@ -6,15 +6,15 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
-#include "gmem.h"
-#include "gmempp.h"
-#include "GList.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GList.h"
 #include "PDFDoc.h"
 #include "DisplayState.h"
 #include "TileMap.h"

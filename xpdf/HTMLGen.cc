@@ -19,7 +19,7 @@
 //~ - metadata
 //~ - PDF outline
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -27,11 +27,11 @@
 
 #include <stdlib.h>
 #include <png.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
-#include "SplashBitmap.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
+#include "../splash/SplashBitmap.h"
 #include "PDFDoc.h"
 #include "GfxFont.h"
 #include "AcroForm.h"

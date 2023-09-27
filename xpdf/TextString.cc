@@ -6,16 +6,16 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <string.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "GString.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
 #include "PDFDocEncoding.h"
 #include "UTF8.h"
 #include "TextString.h"

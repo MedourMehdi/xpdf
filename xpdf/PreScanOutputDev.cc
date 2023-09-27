@@ -6,14 +6,14 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <math.h>
-#include "gmempp.h"
+#include "../goo/gmempp.h"
 #include "GlobalParams.h"
 #include "Page.h"
 #include "Gfx.h"

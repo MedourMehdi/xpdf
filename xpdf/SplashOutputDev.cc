@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -15,9 +15,9 @@
 #include <string.h>
 #include <math.h>
 #include <limits.h>
-#include "gmempp.h"
-#include "gfile.h"
-#include "Trace.h"
+#include "../goo/gmempp.h"
+#include "../goo/gfile.h"
+#include "../goo/Trace.h"
 #include "GlobalParams.h"
 #include "Error.h"
 #include "Object.h"
@@ -29,21 +29,21 @@
 #include "FontEncodingTables.h"
 #include "BuiltinFont.h"
 #include "BuiltinFontTables.h"
-#include "FoFiTrueType.h"
-#include "FoFiType1C.h"
+#include "../fofi/FoFiTrueType.h"
+#include "../fofi/FoFiType1C.h"
 #include "JPXStream.h"
-#include "SplashBitmap.h"
-#include "SplashGlyphBitmap.h"
-#include "SplashPattern.h"
-#include "SplashScreen.h"
-#include "SplashPath.h"
-#include "SplashState.h"
-#include "SplashErrorCodes.h"
-#include "SplashFontEngine.h"
-#include "SplashFont.h"
-#include "SplashFontFile.h"
-#include "SplashFontFileID.h"
-#include "Splash.h"
+#include "../splash/SplashBitmap.h"
+#include "../splash/SplashGlyphBitmap.h"
+#include "../splash/SplashPattern.h"
+#include "../splash/SplashScreen.h"
+#include "../splash/SplashPath.h"
+#include "../splash/SplashState.h"
+#include "../splash/SplashErrorCodes.h"
+#include "../splash/SplashFontEngine.h"
+#include "../splash/SplashFont.h"
+#include "../splash/SplashFontFile.h"
+#include "../splash/SplashFontFileID.h"
+#include "../splash/Splash.h"
 #include "SplashOutputDev.h"
 
 #ifdef VMS

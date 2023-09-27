@@ -6,16 +6,16 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
 #endif
 
 #include <stdlib.h>
-#include "gmempp.h"
-#include "GString.h"
-#include "GList.h"
+#include "../goo/gmempp.h"
+#include "../goo/GString.h"
+#include "../goo/GList.h"
 #include "TileMap.h"
 #include "TileCache.h"
 #include "TileCompositor.h"

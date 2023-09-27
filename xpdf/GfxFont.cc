@@ -6,7 +6,7 @@
 //
 //========================================================================
 
-#include <aconf.h>
+#include "../aconf.h"
 
 #ifdef USE_GCC_PRAGMAS
 #pragma implementation
@@ -18,10 +18,10 @@
 #include <ctype.h>
 #include <math.h>
 #include <limits.h>
-#include "gmem.h"
-#include "gmempp.h"
-#include "GList.h"
-#include "GHash.h"
+#include "../goo/gmem.h"
+#include "../goo/gmempp.h"
+#include "../goo/GList.h"
+#include "../goo/GHash.h"
 #include "Error.h"
 #include "Object.h"
 #include "Dict.h"
@@ -30,10 +30,10 @@
 #include "CharCodeToUnicode.h"
 #include "FontEncodingTables.h"
 #include "BuiltinFontTables.h"
-#include "FoFiIdentifier.h"
-#include "FoFiType1.h"
-#include "FoFiType1C.h"
-#include "FoFiTrueType.h"
+#include "../fofi/FoFiIdentifier.h"
+#include "../fofi/FoFiType1.h"
+#include "../fofi/FoFiType1C.h"
+#include "../fofi/FoFiTrueType.h"
 #include "GfxFont.h"
 
 //------------------------------------------------------------------------

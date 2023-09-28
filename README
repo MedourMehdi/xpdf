@@ -1,3 +1,8 @@
+Modified version by M.Medour.
+This version was entirely cleaned to remove cmake.
+It only uses make.
+The purpose is to allow usage of xpdf as a library for all systems (older and newer :))
+
 Xpdf
 ====
 
@@ -191,7 +196,7 @@ Various people have contributed modifications made for use by the
 pdftex project:
 
 * Han The Thanh
-* Martin Schröder of ArtCom GmbH
+* Martin Schrï¿½der of ArtCom GmbH
 
 
 References

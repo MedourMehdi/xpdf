@@ -1,4 +1,6 @@
-_CC = m68k-atari-mint-g++
+ifeq ($(CXX),)
+CXX := m68k-atari-mint-g++
+endif
 SRC_DIR := ./
 OBJ_DIR := ./build
 BIN_DIR := ./bin
@@ -10,13 +12,15 @@ LIB_SPLASH := $(shell realpath ../splash/libsplash.a)
 
 SRC := $(wildcard $(SRC_DIR)/pdftoppm.cpp)
 
-BIN := $(BIN_DIR)/pdftoppm.ttp
+BIN := $(BIN_DIR)/pdftoppm
 
 OBJ := $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
-_CPPFLAGS := -I./
+ifeq ($(CXXFLAGS),)
+CXXFLAGS := -I./ -m68020-60 -fomit-frame-pointer -fno-strict-aliasing -O2
+endif
 
-_CFLAGS   := -m68020-60 -fomit-frame-pointer -fno-strict-aliasing -O2 
+_CFLAGS   :=
 
 _LDFLAGS  :=
 
@@ -27,12 +31,12 @@ _LDLIBS   := $(LIB_XPDF) $(LIB_FOFI) $(LIB_GOO) $(LIB_SPLASH) -lpthread -lfreety
 all: $(BIN)
 
 $(BIN): $(OBJ) | $(BIN_DIR)
-	$(_CC) $(_LDFLAGS) $^ $(_LDLIBS) -o $@
+	$(CXX) $(_LDFLAGS) $^ $(_LDLIBS) -o $@
 	m68k-atari-mint-strip $(BIN)
 	
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp | $(OBJ_DIR)
 	@mkdir -p $(@D)
-	$(_CC) $(_CPPFLAGS) $(_CFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) $(_CFLAGS) -c $< -o $@
 
 $(BIN_DIR) $(OBJ_DIR):
 	@mkdir -p $(@D)

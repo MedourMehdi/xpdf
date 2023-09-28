@@ -1,9 +1,21 @@
-PREFIX = /opt/cross-mint/m68k-atari-mint
-CC = m68k-atari-mint-g++
-AR = m68k-atari-mint-ar
-RANLIB = m68k-atari-mint-ranlib
-ARFLAGS = -rcs
-CFLAGS = -m68020-60 -fomit-frame-pointer -fno-strict-aliasing -O2
+ifeq ($(PREFIX),)
+PREFIX := $(DESTDIR)/usr
+endif
+ifeq ($(CXX),)
+CXX := m68k-atari-mint-g++
+endif
+ifeq ($(AR),)
+AR := m68k-atari-mint-ar
+endif
+ifeq ($(RANLIB),)
+RANLIB := m68k-atari-mint-ranlib
+endif
+# ifeq ($(ARFLAGS),)
+ARFLAGS := -rcs
+# endif
+ifeq ($(CXXFLAGS),)
+CXXFLAGS := -m68020-60 -fomit-frame-pointer -fno-strict-aliasing -O2
+endif
 
 INC_DIR = "include"
 
@@ -26,7 +38,7 @@ $(C_TARGETS): $(C_LIB_OBJECTS) $(C_LIB_SOURCES:.c*=.h)
 all: $(ALL_TARGETS)
 
 $(C_LIB_OBJECTS):
-	$(CC) $(CFLAGS) -c $(C_LIB_SOURCES)
+	$(CXX) $(CXXFLAGS) -c $(C_LIB_SOURCES)
 
 libsplash.a:
 	$(AR) $(ARFLAGS) $@ $(C_LIB_OBJECTS)

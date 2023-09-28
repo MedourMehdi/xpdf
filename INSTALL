@@ -1,0 +1,76 @@
+Xpdf
+====
+
+version 4.04 modified to be used as a library.
+2023-Sept-28
+M.Medour
+
+version 4.04
+2022-apr-18
+
+The Xpdf software and documentation are
+copyright 1996-2022 Glyph & Cog, LLC.
+
+Email: xpdf@xpdfreader.com
+WWW: http://www.xpdfreader.com/
+
+
+Compiling xpdf
+--------------
+
+Xpdf is written in C++ (with a little bit of C).  It should work with
+any ANSI-compliant C++ and C compilers.  The systems and compilers
+it's been tested with are listed on the xpdf web page.
+
+The following notes give specific instructions for compiling on
+different systems.
+
+
+*******************************
+***  Linux, OS X, Freemint  ***
+*******************************
+
+* Make sure you have the following installed:
+
+    - Make
+    - FreeType 2.0.5 or newer
+    - libpng (for pdftoppm and pdftohtml)
+    - zlib (for pdftoppm and pdftohtml)
+
+* Build:
+
+      make
+
+      Defult destination folder will be xpdf_mint_release unless you set DESTDIR variable.
+
+      For cross-compile you can pass atgs to make as following
+
+      CXX=m68k-atari-mint-g++ AR=m68k-atari-mint-ar RANLIB=m68k-atari-mint-ranlib make
+
+  This will build the executables in the build directory:
+
+      tools/bin/pdftops
+      tools/bin/pdftotext
+      tools/bin/pdftohtml
+      tools/bin/pdfinfo
+      tools/bin/pdffonts
+      tools/bin/pdfdetach
+      tools/bin/pdftoppm
+      tools/bin/pdftopng
+      tools/bin/pdfimages
+
+Headers and libraries should be available in 
+
+        usr/include/xpdf_mint:
+            aconf.h
+            aconf2.h
+            fofi
+            goo
+            splash
+            xpdf
+
+        usr/lib:
+            libfofi.a
+            libgoo.a
+            libsplash.a
+            libxpdf.a

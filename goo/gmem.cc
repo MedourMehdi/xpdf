@@ -6,7 +6,7 @@
  * Copyright 1996-2003 Glyph & Cog, LLC
  */
 
- #include "../aconf.h"
+#include "../aconf.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
@@ -21,6 +21,16 @@
 #  include <windows.h>
 #endif
 #include "../goo/gmem.h"
+
+#ifdef __MINT__
+#include "../mint_alloc.h"
+#endif
+
+// #ifdef __MINT__
+
+// #else
+
+// #endif
 
 #ifdef DEBUG_MEM
 
@@ -145,9 +155,15 @@ void *gmalloc(int size) GMEM_EXCEP {
   if (size == 0) {
     return NULL;
   }
+#ifdef __MINT__
+  if (!(p = gmint_malloc(size))) {
+    gMemError("Out of memory");
+  }
+#else
   if (!(p = malloc(size))) {
     gMemError("Out of memory");
   }
+#endif 
   return p;
 }
 #endif
@@ -185,15 +201,27 @@ void *grealloc(void *p, int size) GMEM_EXCEP {
   }
   if (size == 0) {
     if (p) {
+#ifdef __MINT__
+      gmint_free(p);
+#else
       free(p);
+#endif      
     }
     return NULL;
   }
+#ifdef __MINT__
+  if (p) {
+    q = gmint_realloc(p, size);
+  } else {
+    q = gmint_malloc(size);
+  }
+#else
   if (p) {
     q = realloc(p, size);
   } else {
     q = malloc(size);
   }
+#endif  
   if (!q) {
     gMemError("Out of memory");
   }
@@ -268,9 +296,16 @@ void *gmalloc64(size_t size) GMEM_EXCEP {
   if (size == 0) {
     return NULL;
   }
+#ifdef __MINT__
+  if (!(p = gmint_malloc(size))) {
+    gMemError("Out of memory");
+  }
+#else
   if (!(p = malloc(size))) {
     gMemError("Out of memory");
   }
+#endif  
+
   return p;
 }
 #endif
@@ -345,9 +380,16 @@ void gfree(void *p) {
     }
   }
 #else
+#ifdef __MINT__
+  if (p) {
+    gmint_free(p);
+  }
+#else
   if (p) {
     free(p);
   }
+#endif
+
 #endif
 }
 

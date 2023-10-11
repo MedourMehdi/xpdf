@@ -747,7 +747,9 @@ GlobalParams::GlobalParams(const char *cfgFileName) {
   launchCommand = NULL;
   movieCommand = NULL;
   defaultPrinter = NULL;
-  mapNumericCharNames = gTrue;
+  /*Deactivate mappings using numeric charnames since they are not reliable and use unverified heuristic to be resolved. */
+  // mapNumericCharNames = gTrue;
+  mapNumericCharNames = gFalse;
   mapUnknownCharNames = gFalse;
   mapExtTrueTypeFontsViaUnicode = gTrue;
   useTrueTypeUnicodeMapping = gFalse;

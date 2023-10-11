@@ -41,13 +41,17 @@ different systems.
 
       make
 
-      Default destination folder will be xpdf_mint_release unless you set DESTDIR variable.
+      Defult destination folder will be xpdf_mint_release unless you set DESTDIR variable.
 
-      For cross-compiling you can pass atgs to make as follow:
+      For cross-compile you can pass args to make as following for example
 
       CXX=m68k-atari-mint-g++ AR=m68k-atari-mint-ar RANLIB=m68k-atari-mint-ranlib make
 
-  This will build binaries in:
+      or
+
+      export CXX=m68k-atari-mint-g++ ;export AR=m68k-atari-mint-ar; exportRANLIB=m68k-atari-mint-ranlib; export CXXFLAGS=" -I./ -mcfv4e -fomit-frame-pointer -fno-strict-aliasing -O2 -Wno-multichar" ;export DESTDIR="xpdf_mint_release_cfv4e"; make
+
+  This will build the executables in the build directory:
 
       tools/bin/pdftops
       tools/bin/pdftotext
@@ -59,7 +63,7 @@ different systems.
       tools/bin/pdftopng
       tools/bin/pdfimages
 
-And Headers plus libraries should be available in:
+Headers and libraries should be available in 
 
         usr/include/xpdf_mint:
             aconf.h

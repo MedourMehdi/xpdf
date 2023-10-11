@@ -1,6 +1,10 @@
 BIN_FILES = pdfdetach pdffonts pdfimages pdfinfo pdftohtml pdftopng pdftoppm pdftops pdftotext
-DESTDIR = xpdf_mint_release
-PREFIX = $(DESTDIR)/usr
+ifeq ($(DESTDIR),)
+DESTDIR := xpdf_mint_release
+endif
+ifeq ($(PREFIX),)
+PREFIX := $(DESTDIR)/usr
+endif
 BIN_DIR = $(PREFIX)/bin
 
 all:
